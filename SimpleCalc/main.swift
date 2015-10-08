@@ -40,7 +40,6 @@ func determineComplexOperandAndConduct(operatorType:String, numberArray:[Int]) -
     switch operatorType {
     case complexOperandDictionary["Factorial"]!:
         if (numberArray.count == 1 && numberArray[0] < 21) {
-            print(numberArray);
             for (var i = 0; i < numberArray[0]; i++) {
                 result *= (numberArray[0] - i);
             }
@@ -68,7 +67,6 @@ var inputArray = [String]();
 let input1Trim = input1.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceCharacterSet());
 if (input1Trim.containsString(" ")) {
     inputArray = input1Trim.characters.split{$0 == " "}.map(String.init);
-    print(inputArray);
 }
 let operand = input();
 if (!simpleOperandDictionary.values.contains(operand)) {
