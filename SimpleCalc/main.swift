@@ -16,10 +16,12 @@ func input() -> String {
     return result.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet());
 }
 
+/*
 func convert(incoming:String) -> Int {
-    //return NSFormatter().numberFromString(incoming)!.integerValue;
-    return 1;
+    return NSFormatter().numberFromString(incoming)!.integerValue;
+    //return 1;
 }
+*/
 
 func determineOperandAndConduct(operatorType:String, num1:Int, num2:Int) -> Int {
     switch operatorType {
@@ -43,12 +45,10 @@ let input1 = input();
 let operand = input();
 let input2 = input();
 
-let num1 = convert(input1);
-let num2 = convert(input2);
+//let num1 = convert(input1);
+//let num2 = convert(input2);
+let num1:Int? = Int(input1);
+let num2:Int? = Int(input2);
 
-let result = determineOperandAndConduct(operand, num1, num2);
-println(result);
-
-
-
-
+let result = determineOperandAndConduct(operand, num1: num1!, num2: num2!);
+print(result);

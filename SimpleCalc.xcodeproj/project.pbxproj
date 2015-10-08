@@ -88,6 +88,8 @@
 		841FD6DC1BC5F7B100183EEF /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = "Smyth May";
 				TargetAttributes = {
@@ -236,6 +238,7 @@
 				841FD6ED1BC5F7B100183EEF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
