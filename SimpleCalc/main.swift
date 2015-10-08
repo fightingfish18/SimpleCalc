@@ -67,6 +67,8 @@ var inputArray = [String]();
 let input1Trim = input1.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceCharacterSet());
 if (input1Trim.containsString(" ")) {
     inputArray = input1Trim.characters.split{$0 == " "}.map(String.init);
+} else {
+    inputArray.append(input1Trim);
 }
 let operand = input();
 if (!simpleOperandDictionary.values.contains(operand)) {
